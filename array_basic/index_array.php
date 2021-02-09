@@ -5,8 +5,10 @@ $colors = array('red','blue',"green");
 
 // color.lenth
 for($i=0;$i < count($colors);$i++){
+    
     $color = $colors[$i];
     echo "indice $i corrisponde a $colors[$i]\n";
+
 }
 
 // color.push('rebeccapurple')

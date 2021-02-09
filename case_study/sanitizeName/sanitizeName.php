@@ -1,8 +1,9 @@
 <?php
 
-function sanitizeName($name){
-
-    $upparcaseName = ucfirst($name);
+function sanitizeName($name,$date){
+    // $date = new DateTime();
+    $toLowecase = strtolower($name);
+    $uppercaseName = ucfirst($toLowecase);
     // return $res;
-    return $upparcaseName;
+    return $uppercaseName.$date->format('hh:ss');
 }
