@@ -11,7 +11,8 @@ for($i=0;$i < count($colors);$i++){
 
 // color.push('rebeccapurple')
 $colors[] = 'rebeccapurple';
-$duplicateColor = [];
+
+$duplicateColor = []; // array();
 foreach($colors as $key => $color){
     echo "la chiave $key contiene $color \n";
     $duplicateColor[$key] = $color;
