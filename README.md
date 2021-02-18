@@ -20,18 +20,26 @@ git push -u origin main
 
 ```
 
-## Data Type
-
 ### string
 
 https://www.php.net/manual/en/ref.strings.php
+
 
 ### array
 
 [array su w3school](https://www.w3schools.com/php/php_arrays.asp)
 
-#### numeric / index
+[array su tutorialspoint](https://www.tutorialspoint.com/php/php_arrays.htm)
 
+### iterazione di array
 
+paradigma imperativo
 
-#### associative
+- ciclo for
+- ciclo foreach
+
+paradigma dichiarativo
+
+- array_map (trasforma un array)
+- array_filter (filtra un array)
+
