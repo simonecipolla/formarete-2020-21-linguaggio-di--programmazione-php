@@ -4,12 +4,12 @@ require 'case_study/sanitizeName/sanitizeName.php';
 // require './sanitizeName.php';
 
 $dataset = [
-    ['mario','Mario',__LINE__],
-    ['mAriO','Mario',__LINE__],
-    ['MARIO','Mario',__LINE__],
-    ['De giovanni','De Giovanni',__LINE__],
-    ['Mario83','Mario',__LINE__],
-    ['Mario@','Mario',__LINE__],
+    ['mario','Mario'],
+    ['mAriO','Mario'],
+    ['MARIO','Mario'],
+    ['De giovanni','De Giovanni'],
+    ['Mario83','Mario'],
+    ['Mario@','Mario'],
 ];
 
 foreach ($dataset as $row) {
@@ -23,7 +23,7 @@ foreach ($dataset as $row) {
         if($result == $atteso){
             echo "PASS - tutto ok \n";
         }else{
-            echo "FAIL - test fallito $linea \n";
+            echo "FAIL - test fallito  \n";
         }
 
     
