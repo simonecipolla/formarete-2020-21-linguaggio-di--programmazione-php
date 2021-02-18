@@ -14,10 +14,8 @@ $persons = array(
     ]
 );
 
-
 $result = '';
 foreach ($persons as $person) {
-    // += / .=
     $result .= $person['name']."\n";
 }
 

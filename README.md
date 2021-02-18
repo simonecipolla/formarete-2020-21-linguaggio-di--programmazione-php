@@ -1,7 +1,16 @@
-# Creazione del repository
+# Modulo di PHP
 
-Se avete un repository locale da aggiungere a un nuovo 
-repostitory in remoto.
+## Creazione del repository
+
+Se avete un repository locale e lo volete collegare a un repostitory in remoto già esistente (github).
+
+
+Nel mio caso:
+
+> url repository: 
+> https://github.com/corsidrive/formarete-2020-21-linguaggio-di--programmazione-php.
+
+Quindi:
 
 ```bash
 
@@ -11,7 +20,18 @@ git push -u origin main
 
 ```
 
+## Data Type
 
-## string
+### string
 
 https://www.php.net/manual/en/ref.strings.php
+
+### array
+
+[array su w3school](https://www.w3schools.com/php/php_arrays.asp)
+
+#### numeric / index
+
+
+
+#### associative
