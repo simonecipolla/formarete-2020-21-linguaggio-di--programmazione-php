@@ -60,7 +60,6 @@ Noi abbiamo usato
 
 Per togliere le cifre dai nomi.
 
-
 ### PHP Filter per Validare e Sanificare id dati
 
 https://www.php.net/manual/en/function.strip-tags.php
@@ -72,4 +71,3 @@ https://www.php.net/manual/en/function.filter-var.php
 che utilizza i filtri
 
 https://www.php.net/manual/en/filter.filters.php
-
