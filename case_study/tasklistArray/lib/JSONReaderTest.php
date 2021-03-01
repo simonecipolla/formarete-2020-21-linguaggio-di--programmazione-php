@@ -39,14 +39,18 @@ foreach ($dataset as $row) {
         if (isset($row['type']))
         {
             $type = $row['type'];
-            var_dump(gettype($actual) === $type);
+           
+
+            assertEquals('array', gettype($actual), 'ottengo un array');
+
             var_dump(count($actual) === $row['count']);
         }
     
     } catch (Exception $e) {
+
         var_dump($e->getMessage() === $row['error']);
         var_dump($e->getCode() === $row['errorCode']);
-        
+
     }
 
     
