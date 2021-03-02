@@ -92,14 +92,14 @@ creazione dei test per la funzione che apre un file formato <a href="https://www
 
 #### Exception
 
-La gestione degli errori in PHP.
-
-Quando si verifica una situazione che rappresenta un errore
-nell' applicazione si può 'lanciare' (**throw**) un eccezione.
+##### La gestione degli errori in PHP.
 
 ![exception](_docs/diagram/_docs/exception/exception.png)
-
 
 Nella documentazione di PHP c'è l'esempio della funzione **inverse**
 che genera l'eccezione **Division by zero**
 [esempio di Exception](https://www.php.net/manual/en/language.exceptions.php)
+
+Articoli da leggere
+
+- [Gestione delle eccezioni in PHP con try e catch](https://www.mrw.it/php/gestione-eccezioni-php_7007.html)
