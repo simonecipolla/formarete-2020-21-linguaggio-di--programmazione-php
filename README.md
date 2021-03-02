@@ -4,11 +4,10 @@
 
 Se avete un repository locale e lo volete collegare a un repostitory in remoto già esistente (github).
 
-
 Nel mio caso:
 
-> url repository: 
-> https://github.com/corsidrive/formarete-2020-21-linguaggio-di--programmazione-php.
+> url repository:
+> <https://github.com/corsidrive/formarete-2020-21-linguaggio-di--programmazione-php>.
 
 Quindi:
 
@@ -22,8 +21,7 @@ git push -u origin main
 
 ### String
 
-https://www.php.net/manual/en/ref.strings.php
-
+<https://www.php.net/manual/en/ref.strings.php>
 
 ### Array
 
@@ -58,21 +56,53 @@ Noi abbiamo usato
 [preg_replace](https://www.php.net/manual/en/function.preg-replace.php)
 Per togliere le cifre dai nomi in [sanitizeName](./case_study/sanitizeName/sanitizeName.php).
 
-
 ### PHP filter functions  per Validare e Sanificare id dati
 
 funzioni native del linguaggio che permettono di controllare, validare e ripulire i dati contenuti all’ interno di variabili e argomenti.
 
-
-https://www.php.net/manual/en/function.strip-tags.php
-https://www.php.net/manual/en/function.filter-var.php
+<https://www.php.net/manual/en/function.strip-tags.php>
+<https://www.php.net/manual/en/function.filter-var.php>
 
 che utilizza i filtri
 
-https://www.php.net/manual/en/filter.filters.php
+<https://www.php.net/manual/en/filter.filters.php>
 
 [Utilizzato in sanitizeName](case_study/sanitizeName/sanitizeName.php)
 
-### Lezione del 1 Marzo
+## Lezione del 1 Marzo
 
-#### 
+### Funzione ReadJSON
+
+creazione dei test per la funzione che apre un file formato <a href="https://www.html.it/articoli/introduzione-a-json/" target="_blank">JSON</a>
+
+#### readJSONTest
+
+[Codice di readJSONTest.php](case_study/tasklistArray/lib/JSONReaderTest.php)
+
+##### Casi positivi
+
+- [x] apertura di un file con un array di 20 item
+- [x] apertura di un file con un array vuoto
+
+##### Errori da gestire
+
+- [x] errore di file non esistente
+- [ ] errore di file esistente ma di formato non corretto (ancora da implementare)
+
+
+#### Exception
+
+La gestione degli errori in PHP.
+
+```puml
+
+hide methods
+hide attributes
+hide circle
+
+class readJSON
+class MainScript
+
+readJSON --->  MainScript : Exception ($e)
+
+```
