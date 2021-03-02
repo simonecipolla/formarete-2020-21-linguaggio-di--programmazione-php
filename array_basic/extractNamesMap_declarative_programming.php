@@ -15,26 +15,46 @@ $persons = array(
 );
 
 
-// Dichiarativo 
-// $item = $persons[$i]
-function extractName($item){
-   return $item['name'];
-}
+/** 
+ * Esempi di stile dichiarativo
+ */
 
-$filterMario = function ($person){
-    return $person['surname']=='Mario';
+
+/**
+ * La funzione anonima viene assegnata alla variabile $filterMario
+ */
+$filterMario =  function ($person) {
+                    return $person['surname']=='Mario'; 
 };
 
-//$a = 6;
+/**
+ * La funzione array_filter utilizza la callback contenuta in $filterMario  
+ */
+$marios = array_filter($person, $filterMario);
 
-// array.map(function(item){})
-$names = array_map('extractName',$persons);
+
+/**
+ * Questa funzione estrae il valore dell'indice name per ogni elemento dell' array
+ */
+function extractName($item)
+{
+    return $item['name'];
+}
+
+/**
+ * La funzione di callback viene dichiarata con il nome della finzione
+ */
+$names = array_map('extractName', $persons);
+
 print_r($names);
 
-$marios = array_filter($persons,function($person){
-        return $person['surname']=='Mario';
-});
 
-$marios = array_filter($person,$filterMario);
+/**
+ * La funzione di callback viene passata direttamente come funzione anonima come
+ * argomento
+ */
+$marios = array_filter($persons, function($person){
+        return $person['surname']=='Mario';
+} );
 
 print_r($marios);
