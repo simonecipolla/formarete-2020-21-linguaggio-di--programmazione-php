@@ -74,6 +74,7 @@ che utilizza i filtri
 ### Funzione ReadJSON
 
 creazione dei test per la funzione che apre un file formato <a href="https://www.html.it/articoli/introduzione-a-json/" target="_blank">JSON</a>
+e lo converte in un array associativo.
 
 #### readJSONTest
 
@@ -103,3 +104,12 @@ che genera l'eccezione **Division by zero**
 Articoli da leggere
 
 - [Gestione delle eccezioni in PHP con try e catch](https://www.mrw.it/php/gestione-eccezioni-php_7007.html)
+
+
+#### testTools
+
+creazione di una serie di strumenti che ci aiutino a visualizzare 
+in modo più semplice e ordinato l'esito dei test.
+
+[testTools.php](vendor/testTools/testTool.php)
+[assertEquals()](vendor/testTools/testTool.php)

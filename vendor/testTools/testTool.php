@@ -1,5 +1,10 @@
 <?php 
-
+/**
+ * @var $expected    Valore atteso per superare il test
+ * @var $actual      Valore da confrontare con quello atteso
+ * @var $description Descrizione facoltativa del test
+ * @var $line        Possibiità di indicare la linea di codice del test interessato
+ */
 function assertEquals($expected,$actual,$description = '',$line ='')
 {
 
