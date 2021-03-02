@@ -94,15 +94,12 @@ creazione dei test per la funzione che apre un file formato <a href="https://www
 
 La gestione degli errori in PHP.
 
-```puml
+Quando si verifica una situazione che rappresenta un errore
+nell' applicazione si può 'lanciare' (**throw**) un eccezione.
 
-hide methods
-hide attributes
-hide circle
+![exception](_docs/diagram/_docs/exception/exception.png)
 
-class readJSON
-class MainScript
 
-readJSON --->  MainScript : Exception ($e)
-
-```
+Nella documentazione di PHP c'è l'esempio della funzione **inverse**
+che genera l'eccezione **Division by zero**
+[esempio di Exception](https://www.php.net/manual/en/language.exceptions.php)
