@@ -83,7 +83,7 @@ e lo converte in un array associativo.
 ##### Casi positivi
 
 - [x] apertura di un file con un array di 20 item
-- [x] apertura di un file con un array vuoto
+- [x] [apertura di un file con un array vuoto](/case_study/tasklistArray/dataset/TaskList-zero.json)
 
 ##### Errori da gestire
 
