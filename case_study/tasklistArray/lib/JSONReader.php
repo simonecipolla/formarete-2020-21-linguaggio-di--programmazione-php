@@ -11,10 +11,10 @@ function JSONReader(string $filepath)
     {
         $fileString = file_get_contents($filepath);
         $res = json_decode($fileString, true);
-        
-        if(json_last_error() != 0 )
+        $code =json_last_error();
+        if($code != JSON_ERROR_NONE )
         {
-            throw new Exception('syntax-error', 123);
+            throw new Exception('syntax-error', $code);
         } 
     
     } else {

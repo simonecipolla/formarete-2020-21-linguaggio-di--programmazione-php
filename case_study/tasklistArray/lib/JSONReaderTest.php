@@ -47,11 +47,11 @@ foreach ($dataset as $key => $row) {
         $filepath = $row['filepath'];
         $actual = JSONReader($filepath);
         
-        if (empty($row['error']))
+        if (!isset($row['error']))
         {
             $type = $row['type'];
            
-            assertEquals('array', gettype($actual), 'tipo di dato');
+            assertEquals($type, gettype($actual), 'tipo di dato');
             assertEquals($row['count'], count($actual), 'numero di elementi');
         
         } else {

@@ -21,7 +21,7 @@ function assertEquals($expected,$actual,$description = '',$line ='')
         $output .= "\n ".($line ? "line:$line" : "");
         
         echo $output;
-        die();
+        //die();
     }
 
 }
